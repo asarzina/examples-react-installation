@@ -18,12 +18,19 @@ h2.greetings {
 
 main {
   margin: auto;
-  width: 800px;
-  height: 70vh;
+  width: 700px;
+  height: 50vh;
   background-color: white;
+}
+
+.container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.center {
+  text-align: center;
 }
 
 footer {
