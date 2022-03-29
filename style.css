@@ -1,0 +1,43 @@
+html, body {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: lightblue;
+  margin: 0;
+}
+
+h1 {
+  color: chocolate;
+  text-align: center;
+}
+
+h2.greetings {
+  color: lightseagreen;
+}
+
+main {
+  margin: auto;
+  width: 800px;
+  height: 70vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  background-color: lightgray;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  font-size: 0.8rem;
+  text-align: center;
+}
