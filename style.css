@@ -19,7 +19,7 @@ h2.greetings {
 main {
   margin: auto;
   width: 700px;
-  height: 50vh;
+  /* height: 50vh; */
   background-color: white;
 }
 
@@ -27,6 +27,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 40px;
 }
 
 .center {
@@ -35,9 +37,10 @@ main {
 
 footer {
   background-color: lightgray;
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
+  /* position: absolute; */
+  /* bottom: 0; */
+  margin-top: 40px;
+  width: 100%;
   height: 80px;
   display: flex;
   align-items: center;

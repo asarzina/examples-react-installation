@@ -1,43 +1,19 @@
 import React from 'react';
-import NewsPreview from './NewsPreview';
+import ArticlesNumber from './ArticlesNumber';
+import { ArticlesProvider } from './ArticlesProvider';
 import CounterFunctional from './CounterFunctional';
+import NewsList from './NewsList';
 
-const articles = [
-  {
-    id: 1,
-    title: 'News 1',
-    description: 'Lorem ipsum ...',
-    image: 'https://picsum.photos/100/100',
-  },
-  {
-    id: 2,
-    title: 'News 2',
-    description: 'Lorem ipsum ...',
-    image: 'https://picsum.photos/101/100',
-  },
-  {
-    id: 3,
-    title: 'News 3',
-    description: 'Lorem ipsum ...',
-    image: 'https://picsum.photos/102/100',
-  },
-];
-
-const App = () => {
+const App = ({ initialId }) => {
   return (
-    <>
-      <main className="container">
-        {
-          articles.map((article) => {
-            return <NewsPreview article={article} key={article.id} />;
-          })
-        }
-      </main>
+    <ArticlesProvider initialId={initialId} options={{ cacheMinutes: 60 }}>
+      <ArticlesNumber />
+      <NewsList />
 
       <div className="container">
         <CounterFunctional initValue={100} />
       </div>
-    </>
+    </ArticlesProvider>
   )
 };
 

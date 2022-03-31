@@ -4,16 +4,16 @@ const imgStyle = { width: '100px' };
 
 function NewsPreview({ article = {} }) {
   const {
-    title = '',
-    description = '',
-    image = '',
+    titolo = '',
+    sommario = '',
+    square_image = '',
   } = article;
 
   return (
     <article>
-      <h2>{title}</h2>
-      <p>{description}</p>
-      <img src={image} alt={title} title={title} style={imgStyle} />
+      <h2 dangerouslySetInnerHTML={{ __html: titolo }} />
+      <p dangerouslySetInnerHTML={{ __html: sommario }} />
+      <img src={square_image} alt={titolo} title={titolo} style={imgStyle} />
     </article>
   );
 };
